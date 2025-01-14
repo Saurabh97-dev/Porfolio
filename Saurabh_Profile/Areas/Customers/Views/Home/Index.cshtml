@@ -1,0 +1,25 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+<link href="~/css/home.css" rel="stylesheet" />
+<div class="container-fluid home-section">
+	<div class="d-flex flex-column justify-content-center align-items-center  w-100 h-100 ">
+		<div class="home-header text-center">
+			<h3 class="fw-bold text-white m-0">
+				Hello, I Am <span class="highlight-text">S</span>AURABH <span class="highlight-text">J</span>OSHI
+			</h3>
+			<div class="home-head-description mt-4">
+				<h5 class="text-white m-0">
+					— I am an Asp.net FullStack Developer.
+					I specialize in creating clean, reliable, and interactive web applications. Let's build something amazing! —
+				</h5>
+			</div>
+			<div class="cta-buttons mt-5">
+				<a class="btn btn-light btn-lg me-3" asp-area="Customers" asp-controller="WorkPortfolio" asp-action="index">My Project</a>
+				<a class="btn btn-outline-light btn-lg" asp-area="Customers" asp-controller="MySelf" asp-action="index">My Profile</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,39 @@
+﻿<div class="splash-container" id="splashContainer">
+    <div class="cursor" id="cursor"></div>
+    <h2 style="color:black; font-size: 2em; text-align: center;">Click Anywhere for a Stylish Splash Effect!</h2>
+</div>
+
+<script>
+    // Get the cursor element and splash container
+    const cursor = document.getElementById("cursor");
+    const splashContainer = document.getElementById("splashContainer");
+
+    // Move the custom cursor based on mouse position
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+    });
+
+    // Create splash effect and background ripple on click
+    splashContainer.addEventListener("click", (e) => {
+        const splash = document.createElement("div");
+        splash.classList.add("splash");
+        splash.style.top = `${e.clientY - 50}px`; // Adjust position to center the splash
+        splash.style.left = `${e.clientX - 50}px`; // Adjust position to center the splash
+        splash.style.width = "100px"; // Initial size of splash
+        splash.style.height = "100px"; // Initial size of splash
+        splashContainer.appendChild(splash);
+
+        // Add a subtle background ripple effect
+        const ripple = document.createElement("div");
+        ripple.classList.add("ripple-effect");
+        splashContainer.appendChild(ripple);
+
+        // Remove splash and ripple after animation
+        setTimeout(() => {
+            splash.remove();
+            ripple.remove();
+        }, 800); // Remove after splash animation ends (800ms)
+    });
+
+</script>

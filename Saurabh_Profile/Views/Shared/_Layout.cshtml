@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Saurabh_Profile</title>
+	<script type="importmap"></script>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Saurabh_Profile.styles.css" asp-append-version="true" />
+</head>
+<body>
+	@* <header>
+		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" asp-area="Customers" asp-controller="Home" asp-action="Index"><span class="navlogospn1">S</span><sub class="navlogospn2">J</sub></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+					<ul class="navbar-nav flex-grow-1">
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Customers" asp-controller="Home" asp-action="Index">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Customers" asp-controller="Myself" asp-action="index">Myself</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Customers" asp-controller="Resume" asp-action="index">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Customers" asp-controller="WorkPortfolio" asp-action="index">Work Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="Customers" asp-controller="Contactus" asp-action="index">Contact me</a>
+						</li>
+					</ul>
+					 <partial name="_LoginPartial" />
+				</div>
+			</div>
+		</nav>
+	</header> *@
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-lg mb-4 fixed-top w-100 top-0 start-0 z-index-5">
+			<div class="container-fluid">
+				<!-- Logo -->
+				<a class="navbar-brand d-flex align-items-center" href="@Url.Action("Index", "Home", new { area = "Customers" })">
+					<span class="navlogospn1">S</span><sub class="navlogospn2">J</sub>
+				</a>
+
+				<!-- Navbar Toggle Button -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar Links -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("Index", "Home", new { area = "Customers" })">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("Index", "Myself", new { area = "Customers" })">Myself</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("Index", "Resume", new { area = "Customers" })">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("Index", "WorkPortfolio", new { area = "Customers" })">My Projects</a>
+						</li>
+						@* <li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("WorkPort", "WorkPortfolio", new { area = "Customers" })">Work Portfolio 2</a>
+						</li> *@
+					@* 	<li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("Index", "Contactus", new { area = "Customers" })">Contact Me</a>
+						</li> *@
+					@* 	<li class="nav-item">
+							<a class="nav-link text-dark px-3 py-2 rounded-3 hover-underline" href="@Url.Action("Splashcurser", "Home", new { area = "Customers" })">Splash Curser</a>
+						</li> *@
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<div class="container" style="margin-top:8%">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer class="border-top footer bg-light text-muted">
+		<div class="container">
+			&copy; 2025 - Saurabh_Profile - <a asp-area="User" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

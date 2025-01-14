@@ -1,0 +1,86 @@
+﻿/* Beautiful background for the portfolio section */
+.portfolio-section {
+    padding: 80px 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) /*url('https://via.placeholder.com/1600x900')*/ no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+    /* Semi-transparent overlay for better text visibility */
+    .portfolio-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+.container {
+    z-index: 2;
+    position: relative;
+    width:100%
+}
+
+.portfolio-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+     color: #fff;
+   
+}
+
+/* Portfolio card styling */
+.portfolio-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .portfolio-card img {
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+.portfolio-card-body {
+    padding: 20px;
+}
+
+    .portfolio-card-body h5 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #f39c12;
+    }
+
+    .portfolio-card-body p {
+        font-size: 1rem;
+        color: #bbb;
+    }
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-title {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-card {
+        margin-bottom: 20px;
+    }
+}

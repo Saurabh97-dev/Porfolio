@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "About Myself";
+}
+
+
+
+<link href="~/css/myself.css" rel="stylesheet" />
+
+<div class="aboutContent text-center py-5" style="background: linear-gradient(135deg, #007bff, #6c757d); color: white;">
+    <h3 class="display-4 font-weight-bold">About Me</h3>
+    <hr class="mx-auto" style="width: 10%; border-top: 3px solid white;" />
+</div>
+
+<div class="container mt-5 aboutContentsub">
+    <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-5 text-center">
+            <div class="profile-img-container">
+                <img src="~/images/i2.jpeg" class="img-thumbnail rounded shadow-lg" style="height: 70vh; max-width: 100%; object-fit: cover;" alt="Saurabh Joshi">
+                <div class="overlay">
+                    <p>SAURABH JOSHI</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="col-md-7 p-5">
+            <h3 class="display-5 mb-4">I am <span style="color: #0d6efd;">Saurabh Joshi</span></h3>
+            <p class="text-justify fs-5 text-muted">
+                I am an ASP.NET Developer with 5 years of experience in designing, developing, and deploying scalable web and desktop applications. Proficient in Blazor, ASP.NET Core MVC, C#, LINQ, and Entity Framework. Passionate about innovation, continuous learning, and delivering high-performance applications with exceptional user experiences to drive organizational growth and career advancement.
+            </p>
+
+            <!-- Personal Details -->
+            <div class="row mt-4">
+                <div class="col-6">
+                    <label class="fw-bold">Full Name:</label>
+                </div>
+                <div class="col-6">
+                    Saurabh Joshi
+                </div>
+                <div class="col-6">
+                    <label class="fw-bold">Email:</label>
+                </div>
+                <div class="col-6">
+                    saurabhitdeveloper@gmail.com <br />
+                    <strong>- For more details contact me via provided Email.</strong>
+                </div>
+                <div class="col-6">
+                    <label class="fw-bold">Nationality:</label>
+                </div>
+                <div class="col-6">
+                    Indian
+                </div>
+                <div class="col-6">
+                    <label class="fw-bold">Language:</label>
+                </div>
+                <div class="col-6">
+                    Hindi, English
+                </div>
+                <div class="col-6">
+                    <label class="fw-bold" style="color: #0d6efd;">Freelance:</label>
+                </div>
+                <div class="col-6">
+                    Available
+                </div>
+                <div class="col-6">
+                    <label class="fw-bold" style="color: #0d6efd;">Skills:</label>
+                </div>
+                <div class="col-6 text-justify">
+                    ASP.NET Web Forms, .NET Core, Blazor, SQL Server, ASP.NET MVC, ASP.NET with Entity Framework, C#, HTML & CSS, JavaScript, Bootstrap, GitHub
+                </div>
+            </div>
+
+            <!-- Resume Download Button -->
+            <div class="mt-5 text-center">
+                <a href="~/resumepdf/SAURABHJOSHI_Resume_2025.pdf" target="_blank" class="btn btn-outline-light px-4 py-2 shadow-sm">
+                    <i class="bi bi-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

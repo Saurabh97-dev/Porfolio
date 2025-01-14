@@ -1,0 +1,173 @@
+﻿body {
+    background-color: #e9ecef;
+    color: #343a40;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resume-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.resume-header p {
+    font-size: 1.25rem;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #007bff;
+    position: relative;
+}
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -7px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background: #007bff;
+        border-radius: 50%;
+    }
+/* Education Section */
+.education-section .edu-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .education-section .edu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Skills Section */
+.skills-section .skill-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .skills-section .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+.skills-section h6 {
+    margin: 0;
+    font-weight: 600;
+}
+/* General Section Styling */
+h2.text-primary {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.certificates-section,
+.projects-section,
+.languages-section,
+.future-reference-section {
+    margin-bottom: 40px;
+}
+
+/* Card Styling */
+.certificate-card,
+.project-card,
+.language-card,
+.reference-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .certificate-card:hover,
+    .project-card:hover,
+    .language-card:hover,
+    .reference-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Border Styling */
+
+.certificate-card {
+    border-left: 5px solid #007bff;
+}
+
+.project-card {
+    border-left: 5px solid #17a2b8;
+}
+
+.language-card {
+    border-left: 5px solid #ffc107;
+}
+
+.reference-card {
+    border-left: 5px solid #6c757d;
+}
+
+/* Background and Border Radius */
+.certificate-card,
+.project-card,
+.language-card,
+.reference-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+    /* Icons and Headings */
+    .certificate-card h6,
+    .project-card h6,
+    .language-card h6,
+    .reference-card h6 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .certificate-card h6 i,
+        .project-card h6 i,
+        .language-card h6 i,
+        .reference-card h6 i {
+            font-size: 1.5rem;
+        }
+
+    /* Text Descriptions */
+    .certificate-card p,
+    .project-card p,
+    .language-card p,
+    .reference-card p {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin: 0;
+    }
+
+/* Row and Column Adjustments */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Hover Effects for Buttons (Optional) */
+.certificate-card:hover h6 i,
+.project-card:hover h6 i,
+.language-card:hover h6 i,
+.reference-card:hover h6 i {
+    color: #0056b3; /* Adjust hover color for icons */
+}
+.fw-bold {
+    font-weight: bold;
+    letter-spacing: 1px;
+}

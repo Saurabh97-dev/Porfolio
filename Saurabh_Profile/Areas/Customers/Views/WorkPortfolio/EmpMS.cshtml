@@ -1,0 +1,110 @@
+﻿<style>
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .list-group-item {
+        border: none;
+    }
+
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div class="container py-2">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card p-4">
+                <h1 class="text-center text-primary mb-4">Employee Portal</h1>
+                <div class="mb-3">
+                    <h4 class="section-title">Technology Stack</h4>
+                    <p>ASP.NET, C#, HTML, CSS, Bootstrap, SQL Server</p>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Project Overview</h4>
+                    <p>
+                        I developed an Employee Portal to enhance internal communication, streamline task management, and automate HR processes.
+                        The portal offers an intuitive and user-friendly platform for employees, managers, and HR teams to collaborate efficiently.
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Key Highlights</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>User Interface:</strong> Designed a responsive, easy-to-navigate interface using HTML, CSS, and Bootstrap.
+                            The portal ensures accessibility across various devices, including desktops, tablets, and smartphones, delivering a consistent user experience.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Backend Development:</strong> Built with ASP.NET and C#, the backend provides a scalable and maintainable structure to handle complex workflows and business logic seamlessly.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Database:</strong> SQL Server was employed to securely store and manage employee profiles, task assignments, attendance records, and performance reviews.
+                            The database design supports efficient CRUD operations and robust data integrity.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Core Features</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Employee Profiles:</strong> Comprehensive profiles with personal and professional details, including contact information, job roles, and employment history.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Leave Management:</strong> Streamlines leave application and approval processes with real-time status updates for employees and managers.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Task Assignment:</strong> Allows managers to assign and track tasks efficiently, ensuring clarity and accountability in task management.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Document Sharing:</strong> Facilitates secure sharing of company policies, forms, and other important documents with employees.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>HR Notifications:</strong> Automates HR notifications for announcements, policy updates, and event reminders, keeping employees informed and engaged.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Security Measures</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Role-Based Access Control:</strong> Implements secure access protocols to ensure that sensitive data is accessible only to authorized personnel, such as administrators and managers.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Data Encryption:</strong> Encrypts sensitive employee data to safeguard against unauthorized access and data breaches.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Audit Trails:</strong> Maintains detailed logs of system activities to ensure transparency and accountability.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Outcome</h4>
+                    <p>
+                        The Employee Portal transformed internal operations by enhancing communication, task management, and HR processes.
+                        It reduced administrative workload and improved employee engagement through a centralized and user-friendly platform.
+                        The portal's secure architecture and modular design make it a scalable solution for organizations of varying sizes.
+                        This project demonstrates my proficiency in ASP.NET, C#, SQL Server, and front-end development, showcasing my ability to deliver impactful and efficient solutions.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a asp-area="Customers" asp-controller="WorkPortfolio" asp-action="Index" class="btn btn-outline-primary btn-sm">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

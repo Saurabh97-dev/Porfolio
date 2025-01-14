@@ -1,0 +1,108 @@
+﻿<style>
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .list-group-item {
+        border: none;
+    }
+
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div class="container py-2">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card p-4">
+                <h1 class="text-center text-primary mb-4">Solar Portal</h1>
+                <div class="mb-3">
+                    <h4 class="section-title">Technology Stack</h4>
+                    <p>ASP.NET, C#, HTML, CSS, Bootstrap, SQL Server</p>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Project Overview</h4>
+                    <p>
+                        The Solar Portal is an existing application aimed at providing subsidies to users who purchase solar energy systems from the state government.
+                        It facilitates efficient subsidy distribution, focusing on solar installations of up to 2 kW capacity, ensuring a transparent and streamlined process.
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Key Highlights</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>User Interface:</strong> The portal's front-end was designed using HTML, CSS, and Bootstrap, ensuring a user-friendly, responsive, and accessible interface across devices.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Backend Development:</strong> Built using ASP.NET and C# with an MVC architecture to ensure a modular, scalable, and maintainable codebase. The architecture supports efficient integration of features and simplifies future enhancements.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Database:</strong> SQL Server was utilized to securely store and manage critical data, including user details, subsidy eligibility, and historical transaction records.
+                            The database ensures reliable and efficient data retrieval while maintaining data integrity.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Core Features</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Subsidy Management:</strong> Facilitates the calculation and distribution of subsidies to eligible users based on predefined conditions and criteria.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>User Eligibility Verification:</strong> Automates the verification process to ensure that users meet the criteria for subsidy eligibility, reducing manual effort and errors.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Responsive Design:</strong> The portal is accessible on all devices, providing a consistent user experience across desktops, tablets, and smartphones.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Reporting:</strong> Generates detailed reports on subsidy distribution, user eligibility, and system usage, offering valuable insights to administrators.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Historical Data Management:</strong> Maintains records of previous subsidy distributions and user transactions for future reference and audits.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Security Measures</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Role-Based Access Control:</strong> Ensures secure handling of data by assigning specific access rights to employees, managers, and administrators.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Data Encryption:</strong> Protects sensitive user and subsidy information from unauthorized access.
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Audit Logs:</strong> Tracks system activities and changes for accountability and transparency in subsidy management.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3">
+                    <h4 class="section-title">Outcome</h4>
+                    <p>
+                        The Solar Portal has significantly streamlined the process of providing subsidies for solar energy systems, reducing manual workload and improving transparency.
+                        Its robust design and user-friendly interface have enhanced the efficiency of subsidy distribution while maintaining strict security standards.
+                        This project demonstrates my expertise in ASP.NET, C#, SQL Server, and front-end technologies, delivering practical solutions for large-scale applications.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a asp-area="Customers" asp-controller="WorkPortfolio" asp-action="Index" class="btn btn-outline-primary btn-sm">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
