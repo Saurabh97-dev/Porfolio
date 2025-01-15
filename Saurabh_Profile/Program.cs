@@ -33,6 +33,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
+var options = new DefaultFilesOptions();
+options.DefaultFileNames.Clear();
+options.DefaultFileNames.Add("index.html");
+app.UseDefaultFiles(options);
+
 app.MapStaticAssets();
 
 app.MapControllerRoute(
